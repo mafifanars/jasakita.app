@@ -1,13 +1,24 @@
 @extends('layouts.main')
 
+@section('title', 'JasaKita | Bantuan Pemesan')
+
 @section('pages')
-<section id="faq">
+
+{{-- Title --}}
+<section id="subpage-title" class="section-bg" style="padding-bottom: -50px;">
+
     <div class="container">
-        <header class="section-header mt-5">
+        <header class="section-header">
             <h3>Tanya dan Jawab</h3>
             <p>Tanya dan Jawab untuk pemesan</p>
         </header>
+    </div>
 
+</section>
+  
+{{-- FAQ --}}
+<section id="faq" style="margin-top: -50px;">
+    <div class="container">
         <div class="row portfolio-container col-md-6 col-lg-12 mb-5">
             <ul id="faq-list" class="wow fadeInUp col-lg-12 portfolio-item filter-app">
                 <li>
@@ -77,5 +88,5 @@
             </ul>
         </div>
     </div>
-  </section>
+</section>
 @endsection

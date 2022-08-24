@@ -776,6 +776,7 @@ h6 {
   color: #272A68;
   margin-bottom: 5px;
   transition: all 0.3s ease-in-out;
+  text-align: center;
 }
 
 #layanan #layanan-flters li:hover,
@@ -803,6 +804,7 @@ h6 {
   box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
   transition: all 0.3s ease-in-out;
   /* text-align: center; */
+  
   
 }
   
@@ -1634,4 +1636,179 @@ h6 {
   #footer .footer-top .social-links a {
     margin-bottom: 25px;
   }
+}
+
+
+/* Subpage Title */
+#subpage-title {
+  padding: 80px 0 0 0;
+}
+
+#subpage-title .card {
+  border: 0;
+  border-radius: 0px;
+  box-shadow: 0 3px 0px 0 rgba(65, 62, 102, 0.08);
+  transition: all .3s ease-in-out;
+  padding: 36px 0;
+  position: relative;
+}
+
+#subpage-title .card:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 5px;
+  background-color: #E7C14F;
+  transition: 0.5s;
+}
+
+#subpage-title .card:hover {
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
+  box-shadow: 0 20px 35px 0 rgba(0, 0, 0, 0.08);
+}
+
+#subpage-title .card:hover:after {
+  width: 100%;
+}
+
+#subpage-title .card .card-header {
+  background-color: white;
+  border-bottom: 0px;
+  -moz-text-align-last: center;
+  text-align-last: center;
+}
+
+#subpage-title .card .card-title {
+  margin-bottom: 16px;
+  color: #535074;
+}
+
+#subpage-title .card .card-block {
+  padding-top: 0;
+  text-align: center;
+}
+
+#subpage-title .card .list-group-item {
+  border: 0px;
+  padding: 6px;
+  color: #272A68;
+  font-weight: 300;
+}
+
+#subpage-title .card h3 {
+  font-size: 64px;
+  margin-bottom: 0px;
+  color: #535074;
+}
+
+#subpage-title .card h3 .currency {
+  font-size: 30px;
+  position: relative;
+  font-weight: 400;
+  top: -30px;
+  letter-spacing: 0px;
+}
+
+#subpage-title .card h3 .period {
+  font-size: 16px;
+  color: #6c67a3;
+  letter-spacing: 0px;
+}
+
+#subpage-title .card .list-group {
+  margin-bottom: 15px;
+}
+
+#subpage-title .card .btn {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  color: #5f5b96;
+  border-radius: 0;
+  padding: 7px 22px;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  display: inline-block;
+  background: #E7C14F;
+  color: #fff;
+  border-radius: 20px;
+}
+
+#subpage-title .card .btn:hover {
+  background: #ECCD72;
+}
+
+/* Subpage */
+#subpage {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  /* background: #f5f8fd url("../img/intro-bg.jpg") center top no-repeat; */
+  background-size: cover;
+}
+
+#subpage .intro-info h2 {
+  color: #272A68;
+  font-size: 48px;
+  font-weight: 700;
+}
+#subpage .intro-info h5 {
+  color: #6E7B92;
+  margin-bottom: 40px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#subpage .intro-info h2 span {
+  color: #E7C14F;
+}
+#subpage .intro-info h5 span {
+  color: #272A68;
+  font-weight: 600;
+}
+
+#subpage .intro-info .btn-get-started,
+#subpage .intro-info .btn-services {
+  font-family: "Poppins", sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 25px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #fff;
+  background: #E7C14F;
+  color: #fff;
+  border-radius: 20px;
+}
+
+#subpage .intro-info .btn-get-started:hover,
+#subpage .intro-info .btn-services:hover {
+  background: #ECCD72;
+}
+
+/* Filter Tab */
+/* .container {
+  overflow: hidden;
+} */
+
+.filterDiv {
+float: left;
+/* background-color: #2196F3;
+color: #ffffff;
+width: 100px;
+line-height: 100px;
+text-align: center;
+margin: 2px; */
+display: none; /* Hidden by default */
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+display: block;
 }

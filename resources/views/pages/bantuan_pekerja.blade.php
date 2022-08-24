@@ -1,13 +1,24 @@
 @extends('layouts.main')
 
-@section('pages')
-<section id="faq">
-    <div class="container">
-        <header class="section-header mt-5">
-            <h3>Tanya dan Jawab</h3>
-            <p>Tanya dan Jawab untuk mitra (pekerja)</p>
-        </header>
+@section('title', 'JasaKita | Bantuan Pekerja')
 
+@section('pages')
+
+{{-- Title --}}
+<section id="subpage-title" class="section-bg" style="padding-bottom: -50px;">
+
+    <div class="container">
+        <header class="section-header">
+            <h3>Tanya dan Jawab</h3>
+            <p>Tanya dan Jawab untuk pekerja (mitra)</p>
+        </header>
+    </div>
+
+</section>
+  
+{{-- FAQ --}}
+<section id="faq" style="margin-top: -50px;">
+    <div class="container">
         <div class="row portfolio-container col-md-6 col-lg-12 mb-5">
             <ul id="faq-list" class="wow fadeInUp col-lg-12 portfolio-item filter-app mb-5">
                 <li>

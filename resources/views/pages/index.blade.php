@@ -1,5 +1,7 @@
 @extends('layouts.main')
 
+@section('title', 'JasaKita | Aplikasi Layanan Jasa Pekerja Paruh Waktu')
+
 @section('pages')
 
     {{-- Beranda --}}
@@ -65,36 +67,36 @@
                 <div class="row justify-content-center">
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="box">
-                            <div class="icon" style="background: #eafde7;"><i class="ion-ios-speedometer-outline" style="color:#41cf2e;"></i></div>
-                            <h4 class="title"><a href="">Pendaftaran Mudah</a></h4>
+                            <div class="icon" style="background: #D0FCC5;"><i class="fa-solid fa-arrow-right" style="color:#41cf2e;"></i></div>
+                            <h4 class="title"><a>Pendaftaran Mudah</a></h4>
                             <p class="description">Nikmati mudahnya registrasi online sebagai konsumen dan pekerja. Dapatkan dua keuntungan sekaligus dalam satu aplikasi JasaKita</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
                         <div class="box">
-                            <div class="icon" style="background: #fceef3;"><i class="ion-ios-analytics-outline" style="color: #ff689b;"></i></div>
-                            <h4 class="title"><a href="">Paruh Waktu</a></h4>
+                            <div class="icon" style="background: #5C4DC1;"><i class="fa-regular fa-clock" style="color:#f5f5f5;"></i></div>
+                            <h4 class="title"><a>Paruh Waktu</a></h4>
                             <p class="description">JasaKita memfasilitasi para pekerja untuk dapat bekerja secara paruh waktu serta memudahkan konsumen yang sedang mencari jasa.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="icon" style="background: #fff0da;"><i class="ion-ios-bookmarks-outline" style="color: #e98e06;"></i></div>
-                            <h4 class="title"><a href="">Tawarkan Harga</a></h4>
-                            <p class="description">JasaKita menguntungkan sesama pengguna, melalui penawaran harga oleh pekerja yang bebas dipilih oleh konsumen.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.2s" data-wow-duration="1.4s">
                         <div class="box">
-                            <div class="icon" style="background: #e1eeff;"><i class="ion-ios-world-outline" style="color: #2282ff;"></i></div>
-                            <h4 class="title"><a href="">Kebebasan Memilih</a></h4>
+                            <div class="icon" style="background: #e1eeff;"><i class="fa-solid fa-hand-pointer" style="color: #58595B"></i></div>
+                            <h4 class="title"><a>Kebebasan Memilih</a></h4>
                             <p class="description">JasaKita mengizinkan pengguna baik konsumen ataupun pekerja bebas memilih tawaran terbaik dari segi harga, rating, dan lokasi.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-duration="1.4s">
+                        <div class="box">
+                            <div class="icon" style="background: #FFB155;"><i class="fa-solid fa-dollar-sign" style="color: #f5f5f5"></i></div>
+                            <h4 class="title"><a>Tawarkan Harga</a></h4>
+                            <p class="description">JasaKita menguntungkan sesama pengguna, melalui penawaran harga oleh pekerja yang bebas dipilih oleh konsumen.</p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-4 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="box">
-                            <div class="icon" style="background: #e6fdfc;"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-                            <h4 class="title"><a href="">Data Mitra Terautentikasi</a></h4>
+                            <div class="icon" style="background: #DDDCE0;"><i class="fa-solid fa-fingerprint" style="color: #386384"></i></div>
+                            <h4 class="title"><a>Data Mitra Terautentikasi</a></h4>
                             <p class="description">Untuk menjaga keamanan JasaKita menerapkan fitur fingerprint untuk pengecekan autentikasi keaslian data pekerja sebelum bekerja.</p>
                         </div>
                     </div>
@@ -112,20 +114,20 @@
 
                 <div class="row">
                     <div class="col-lg-12">
-                        <ul id="layanan-flters">
-                            <li data-filter="*" class="filter-active">Semua</li>
-                            <li data-filter=".filter-app">Rumah Tangga</li>
-                            <li data-filter=".filter-card">Supir</li>
-                            <li data-filter=".filter-web">Servis Elektronik</li>
-                        </ul>
+                      <ul id="layanan-flters">
+                        <li class="filter-active" onclick="filterSelection('all')">Semua</li>
+                        <li onclick="filterSelection('rumah-tangga')">Rumah Tangga</li>
+                        <li onclick="filterSelection('supir')">Supir</li>
+                        <li onclick="filterSelection('elektronik')">Servis Elektronik</li>
+                      </ul>
                     </div>
                 </div>
 
-                <div class="row portfolio-container justify-content-center">
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-app" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv rumah-tangga" data-wow-delay="0.1s" data-wow-duration="1.4s">
                         <div class="box">
                             <div class="box-header">
-                                <img src="img/icon.png" alt="">
+                                <img src="{{ asset('img/icon/icon1.png') }}" alt="">
                             </div>
                             <div class="box-footer">
                                 <h4 class="title">Jasa Cuci Pakaian</h4>
@@ -133,117 +135,129 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-app" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Setrika Pakaian</h4>
-                                <p class="description">Jasa setrika pakaian, hitungan harga per pcs, kerapihan terjamin, dan harga dapat ditawarkan.</p>
-                            </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv rumah-tangga" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon2.png') }}" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-app" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Membersihkan Rumah</h4>
-                                <p class="description">Membersihkan ruangan yang ada di rumah, tambahkan catatan bila perlu, dan tawar harga yang pas.</p>
-                            </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Setrika Pakaian</h4>
+                          <p class="description">Jasa setrika pakaian, hitungan harga per pcs, kerapihan terjamin, dan harga dapat ditawarkan.</p>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-app" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa BabySitter</h4>
-                                <p class="description">BabySitter harian lebih mudah didapatkan. Data mitra terverifikasi. Kerja nyaman, keluarga aman.</p>
-                            </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv rumah-tangga" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-app" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Tukang Kebun</h4>
-                                <p class="description">Pembersihan menyeluruh area kebun. Sesuaikan keinginan, pilih durasi waktu, dan tambahkan catatan bila perlu.</p>
-                            </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Membersihkan Rumah</h4>
+                          <p class="description">Membersihkan ruangan yang ada di rumah, tambahkan catatan bila perlu, dan tawar harga yang pas.</p>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-app" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Memasak</h4>
-                                <p class="description">Tidak perlu memikirkan menu makanan setiap hari, JasaKita hadir menyediakan jasa memasak harian.</p>
-                            </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv rumah-tangga" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-web" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Servis AC</h4>
-                                <p class="description">Jasa pencucian, pengecekan, dan perbaikan AC dengan sekali klik pada aplikasi JasaKita.</p>
-                            </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa BabySitter</h4>
+                          <p class="description">BabySitter harian lebih mudah didapatkan. Data mitra terverifikasi. Kerja nyaman, keluarga aman.</p>
                         </div>
+                      </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-web" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Servis TV</h4>
-                                <p class="description">Jasa pengecekan, dan perbaikan TV. Penambahan alat eksternal TV dengan pekerja yang berpengalaman.</p>
-                            </div>
+
+                    {{-- Tukang Kebun --}}
+                    {{-- <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv rumah-tangga" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-web" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Servis HP</h4>
-                                <p class="description">Menampung semua keluhan customer mengenai kerusakan handphone, mitra menuju lokasi dan segera memperbaiki.</p>
-                            </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Tukang Kebun</h4>
+                          <p class="description">Pembersihan menyeluruh area kebun. Sesuaikan keinginan, pilih durasi waktu, dan tambahkan catatan bila perlu.</p>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-card" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Supir Mobil</h4>
-                                <p class="description">Supir memiliki pengalaman mengemudi serta selalu memperhatikan kenyamanan dan keamanan penumpang.</p>
-                            </div>
+                      </div>
+                    </div> --}}
+                    {{-- Akhir tukang kebun --}}
+
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv rumah-tangga" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filter-card" data-wow-delay="0.1s" data-wow-duration="1.4s">
-                        <div class="box">
-                            <div class="box-header">
-                                <img src="img/icon.png" alt="">
-                            </div>
-                            <div class="box-footer">
-                                <h4 class="title">Jasa Supir Truck</h4>
-                                <p class="description">Supir kami memiliki catatan perjalanan lintas yang terjamin, kamu dapat memilih durasi waktu pengantaran sesuka hati.</p>
-                            </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Memasak</h4>
+                          <p class="description">Tidak perlu memikirkan menu makanan setiap hari, JasaKita hadir menyediakan jasa memasak harian.</p>
                         </div>
+                      </div>
                     </div>
-                </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
+                        </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Servis AC</h4>
+                          <p class="description">Jasa pencucian, pengecekan, dan perbaikan AC dengan sekali klik pada aplikasi JasaKita.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {{-- Jasa Servis TV dan HP --}}
+                    {{-- <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
+                        </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Servis TV</h4>
+                          <p class="description">Jasa pengecekan, dan perbaikan TV. Penambahan alat eksternal TV dengan pekerja yang berpengalaman.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
+                        </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Servis HP</h4>
+                          <p class="description">Menampung semua keluhan customer mengenai kerusakan handphone, mitra menuju lokasi dan segera memperbaiki.</p>
+                        </div>
+                      </div>
+                    </div> --}}
+                    {{-- Akhir Jasa Servis TV dan HP --}}
+                    
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv supir" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
+                        </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Supir Mobil</h4>
+                          <p class="description">Supir memiliki pengalaman mengemudi serta memperhatikan kenyamanan dan keamanan penumpang.</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    {{-- Supir Truk --}}
+                    {{-- <div class="col-md-6 col-lg-4 wow bounceInUp portfolio-item filterDiv supir" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                      <div class="box">
+                        <div class="box-header">
+                          <img src="{{ asset('img/icon/icon.png') }}" alt="">
+                        </div>
+                        <div class="box-footer">
+                          <h4 class="title">Jasa Supir Truck</h4>
+                          <p class="description">Supir kami memiliki catatan perjalanan lintas yang terjamin, kamu dapat memilih durasi waktu pengantaran sesuka hati.</p>
+                        </div>
+                      </div>
+                    </div> --}}
+                    {{-- Akhir Supir Truk --}}
+
+                  </div>
             </div>
         </section>
         {{-- AKhir Layanan --}}
@@ -275,43 +289,7 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="member">
-                            <img src="img/tim/proman.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Ridha Arrahmi</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="member">
-                            <img src="img/tim/acct.jpg" class="img-fluid" alt="">
-                            <div class="member-info">
-                                <div class="member-info-content">
-                                    <h4>Jernih</h4>
-                                    <span>Accountant</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
                             <img src="img/tim/cto.jpg" class="img-fluid" alt="">
@@ -329,6 +307,43 @@
                             </div>
                         </div>
                     </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="member">
+                            <img src="img/tim/cmo.jpg" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Ridha Arrahmi</h4>
+                                    <span>Chief Marketing Officer</span>
+                                    <div class="social">
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="member">
+                            <img src="img/tim/cfo.jpg" class="img-fluid" alt="">
+                            <div class="member-info">
+                                <div class="member-info-content">
+                                    <h4>Jernih</h4>
+                                    <span>Chief Finance Officer</span>
+                                    <div class="social">
+                                        <a href=""><i class="fa fa-twitter"></i></a>
+                                        <a href=""><i class="fa fa-facebook"></i></a>
+                                        <a href=""><i class="fa fa-google-plus"></i></a>
+                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>

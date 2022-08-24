@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Http;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,4 +22,10 @@ Route::get('/bantuan-pemesan', function () {
 });
 Route::get('/bantuan-pekerja', function () {
     return view('pages.bantuan_pekerja');
+});
+Route::get('/kebijakan-privasi', function () {
+    return view('pages.privacy-policy');
+});
+Route::get('/ketentuan-layanan', function () {
+    return view('pages.term-of-services');
 });

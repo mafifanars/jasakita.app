@@ -27,18 +27,18 @@
                             <div class="footer-links">
                                 <h4>Tautan Cepat</h4>
                                 <ul>
-                                <li><a href="#beranda">Beranda</a></li>
-                                <li><a href="#tentang">Tentang kami</a></li>
-                                <li><a href="#keunggulan">Keunggulan</a></li>
-                                <li><a href="#layanan">Layanan</a></li>
-                                <li><a href="#">Ketentuan Layanan</a></li>
-                                <li><a href="#">Kebijakan Privasi</a></li>
+                                <li><a href="/#beranda">Beranda</a></li>
+                                <li><a href="/#tentang">Tentang kami</a></li>
+                                <li><a href="/#keunggulan">Keunggulan</a></li>
+                                <li><a href="/#layanan">Layanan</a></li>
+                                <li><a href="/ketentuan-layanan">Ketentuan Layanan</a></li>
+                                <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
                                 </ul>
                             </div>
                         
                             <div class="social-links">
                                 <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                <a href="https://web.facebook.com/profile.php?id=100084363606062" class="facebook"><i class="fa fa-facebook"></i></a>
                                 <a href="https://www.instagram.com/jasakita.app" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
                                 <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
                             </div>
