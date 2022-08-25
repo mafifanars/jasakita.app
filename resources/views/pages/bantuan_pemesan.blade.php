@@ -27,7 +27,7 @@
     </div> --}}
 
     <div class="container">
-        <div class="row portfolio-container col-md-6 col-lg-12 mb-5">
+        <div class="row col-md-6 col-lg-12">
             <ul id="faq-list" class="wow fadeInUp col-lg-12 portfolio-item filter-app">
                 <li>
                     <a data-toggle="collapse" class="collapsed" href="#faq1">Apakah layanan JasaKita ada di daerah saya? <i class="ion-android-remove"></i></a>

@@ -16,7 +16,7 @@
 
 </section>
   
-{{-- FAQ --}}
+{{-- Term of Service --}}
 <section id="faq" style="margin-top: -50px;">
     
     {{-- <div class="container mt-5">
@@ -27,7 +27,7 @@
     </div> --}}
 
     <div class="container">
-        <div class="row portfolio-container col-md-6 col-lg-12 mb-5">
+        <div class="row col-md-6 col-lg-12">
         </div>
     </div>
 </section>
