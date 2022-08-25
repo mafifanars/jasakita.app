@@ -19,7 +19,7 @@
 {{-- FAQ --}}
 <section id="faq">
 
-    <div class="container mt-5">
+    <div class="container mt-5" >
         <header class="section-header">
             <h3>Tanya dan Jawab</h3>
             <p>Tanya dan Jawab untuk pemesan</p>
