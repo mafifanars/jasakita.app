@@ -31,8 +31,8 @@
                                 <li><a href="/#tentang">Tentang kami</a></li>
                                 <li><a href="/#keunggulan">Keunggulan</a></li>
                                 <li><a href="/#layanan">Layanan</a></li>
-                                <li><a href="/ketentuan-layanan">Ketentuan Layanan</a></li>
                                 <li><a href="/kebijakan-privasi">Kebijakan Privasi</a></li>
+                                <li><a href="/syarat-ketentuan">Syarat dan Ketentuan</a></li>
                                 </ul>
                             </div>
                         

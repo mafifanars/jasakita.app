@@ -26,6 +26,6 @@ Route::get('/bantuan-pekerja', function () {
 Route::get('/kebijakan-privasi', function () {
     return view('pages.privacy-policy');
 });
-Route::get('/ketentuan-layanan', function () {
-    return view('pages.term-of-services');
+Route::get('/syarat-ketentuan', function () {
+    return view('pages.syarat-ketentuan');
 });
