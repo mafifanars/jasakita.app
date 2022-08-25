@@ -5,7 +5,7 @@
 @section('pages')
 
 {{-- Title --}}
-<section id="subpage-title" class="section-bg">
+<section id="subpage-title" class="#section-bg">
 
     <div class="container mt-4">
         <header class="section-header">
