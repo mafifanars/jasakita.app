@@ -12,7 +12,7 @@
                     <h2>Layanan Jasa<br>Pekerja Paruh Waktu <span>Terbaik!</span></h2>
                     <h5>Kerja Cepat - Harga Pas - <span>Jasa</span><span class="blue">Kita</span> Solusinya.</h5>
                     <div>
-                        <a href="#about" class="btn-get-started scrollto"><i class="fa-brands fa-google-play"></i> Google Play</a>
+                        <a href="https://play.google.com/store/apps/details?id=com.app.jasakita.developer" target="_blanks" class="btn-get-started scrollto"><i class="fa-brands fa-google-play"></i> Google Play</a>
                     </div>
                 </div>
                 <div class="col-md-6 intro-img order-md-last order-first">
@@ -207,7 +207,7 @@
                     </div>
 
                     {{-- Jasa Servis TV dan HP --}}
-                    {{-- <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
                       <div class="box">
                         <div class="box-header">
                           <img src="{{ asset('img/icon/icon.png') }}" alt="">
@@ -218,7 +218,7 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
+                    {{-- <div class="col-md-6 col-lg-4 wow bounceInUp filterDiv elektronik" data-wow-delay="0.1s" data-wow-duration="1.4s">
                       <div class="box">
                         <div class="box-header">
                           <img src="{{ asset('img/icon/icon.png') }}" alt="">

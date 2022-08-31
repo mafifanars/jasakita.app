@@ -17,8 +17,8 @@
                                 Jalan Dr. T. Mansur Nomor 9,<br>
                                 Padang Bulan, Kec. Medan Baru<br>
                                 Kota Medan, Sumatera Utara <br>
-                                <strong>Phone:</strong> +62 8235 0549 871<br>
-                                <strong>Email:</strong> tim.jasakita@gmail.com<br>
+                                <strong>Phone:</strong> <a href="tel:+62 821-6269-5540">+62 821-6269-5540</a><br>
+                                <strong>Email:</strong> <a href="mailto:official.jasaskita@gmail.com">official.jasakita@gmail.com</a><br>
                                 </p>
                             </div>
                         </div>
@@ -37,10 +37,10 @@
                             </div>
                         
                             <div class="social-links">
-                                <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                                <a href="https://web.facebook.com/profile.php?id=100084363606062" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
-                                <a href="https://www.instagram.com/jasakita.app" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
-                                <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                <a href="https://play.google.com/store/apps/details?id=com.app.jasakita.developer" target="_blank" class="linkedin"><i class="fa-brands fa-google-play"></i></a>
+                                <a href="https://www.instagram.com/official.jasakita" target="_blank" class="instagram"><i class="fa fa-instagram"></i></a>
+                                <a href="https://wa.me/6282162695540" target="_blank" class="twitter"><i class="fa fa-whatsapp"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=100084914963719" target="_blank" class="facebook"><i class="fa fa-facebook"></i></a>
                             </div>
                         </div>
                     </div>
@@ -90,7 +90,7 @@
         </div>
 
         <div class="credits">
-            Didesain oleh <a href="https://www.instagram.com/jasakita.app" target="_blank">Tim JasaKita</a>
+            Didesain oleh <a href="https://www.instagram.com/official.jasakita" target="_blank">Tim JasaKita</a>
         </div>
     </div>
 </footer>
