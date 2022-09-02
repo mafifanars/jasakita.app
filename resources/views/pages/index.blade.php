@@ -131,7 +131,7 @@
                             </div>
                             <div class="box-footer">
                                 <h4 class="title">Jasa Cuci Pakaian</h4>
-                                <p class="description">Mencuci pakaian terasa sangat mudah, hitungan harga per pcs, dan dapatkan tawaran harga terbaik dari mitra.</p>
+                                <p class="description">Mencuci pakaian terasa sangat mudah, hitungan harga per kg, dan dapatkan tawaran harga terbaik dari mitra.</p>
                             </div>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
                         </div>
                         <div class="box-footer">
                           <h4 class="title">Jasa Setrika Pakaian</h4>
-                          <p class="description">Jasa setrika pakaian, hitungan harga per pcs, kerapihan terjamin, dan harga dapat ditawarkan.</p>
+                          <p class="description">Jasa setrika pakaian, hitungan harga per kg, kerapihan terjamin, dan harga dapat ditawarkan.</p>
                         </div>
                       </div>
                     </div>
@@ -280,10 +280,9 @@
                                     <h4>Mhd Afifan Aly R Saragih</h4>
                                     <span>Chief Executive Officer</span>
                                     <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/m.afifanars" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
+                                        <a href="https://www.linkedin.com/in/mafifanars/"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -298,10 +297,9 @@
                                     <h4>M D Arbani A Dalimunthe</h4>
                                     <span>Chief Technology Officer</span>
                                     <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/just_arbani" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
+                                        <a href="https://www.linkedin.com/in/m-d-arbani-asfi-dalimunthe-96b871226/"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -316,10 +314,9 @@
                                     <h4>Ridha Arrahmi</h4>
                                     <span>Chief Marketing Officer</span>
                                     <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/ridhaarrhm_" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
+                                        <a href="https://www.linkedin.com/in/ridhaarrahmi/"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -334,10 +331,9 @@
                                     <h4>Jernih</h4>
                                     <span>Chief Finance Officer</span>
                                     <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.instagram.com/jernih17_" target="_blank"><i class="fa fa-instagram"></i></a>
+                                        {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
+                                        <a href="https://www.linkedin.com/in/jernih-aisy-461b5024a/><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
