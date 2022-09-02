@@ -282,7 +282,7 @@
                                     <div class="social">
                                         <a href="https://www.instagram.com/m.afifanars" target="_blank"><i class="fa fa-instagram"></i></a>
                                         {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
-                                        <a href="https://www.linkedin.com/in/mafifanars/"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.linkedin.com/in/mafifanars/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -299,7 +299,7 @@
                                     <div class="social">
                                         <a href="https://www.instagram.com/just_arbani" target="_blank"><i class="fa fa-instagram"></i></a>
                                         {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
-                                        <a href="https://www.linkedin.com/in/m-d-arbani-asfi-dalimunthe-96b871226/"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.linkedin.com/in/m-d-arbani-asfi-dalimunthe-96b871226/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -316,7 +316,7 @@
                                     <div class="social">
                                         <a href="https://www.instagram.com/ridhaarrhm_" target="_blank"><i class="fa fa-instagram"></i></a>
                                         {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
-                                        <a href="https://www.linkedin.com/in/ridhaarrahmi/"><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.linkedin.com/in/ridhaarrahmi/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
@@ -333,7 +333,7 @@
                                     <div class="social">
                                         <a href="https://www.instagram.com/jernih17_" target="_blank"><i class="fa fa-instagram"></i></a>
                                         {{-- <a href=""><i class="fa fa-twitter"></i></a> --}}
-                                        <a href="https://www.linkedin.com/in/jernih-aisy-461b5024a/><i class="fa fa-linkedin"></i></a>
+                                        <a href="https://www.linkedin.com/in/jernih-aisy-461b5024a/" target="_blank"><i class="fa fa-linkedin"></i></a>
                                     </div>
                                 </div>
                             </div>
