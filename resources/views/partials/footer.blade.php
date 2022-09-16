@@ -51,7 +51,8 @@
                         <h4>Beri kami masukan</h4>
                         <p>Masukan dari anda dapat membantu kami dalam mengembangkan aplikasi menuju lebih baik.</p>
 
-                        <form action="" method="post" role="form" class="contactForm">
+                        <form action="/feedback" method="post" role="form" class="contactForm">
+                            @csrf
                             <div class="form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                                 <div class="validation"></div>

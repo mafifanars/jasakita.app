@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Http;
+use App\Http\Controllers\FeedbackController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,9 @@ use Illuminate\Support\Facades\Http;
 |
 */
 
+// Route::get('/message', function () {
+//     return view('pages.emails.message-feedback');
+// });
 Route::get('/', function () {
     return view('pages.index');
 });
@@ -29,3 +33,5 @@ Route::get('/kebijakan-privasi', function () {
 Route::get('/syarat-ketentuan', function () {
     return view('pages.syarat-ketentuan');
 });
+
+Route::post('/feedback', [FeedbackController::class, 'feedback']);
