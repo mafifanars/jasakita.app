@@ -32,9 +32,10 @@ class ContactMail extends Mailable
     {
         $from = $this->details['email'];
         $name = $this->details['name'];
+        $subject = $this->details['subject'];
 
         return $this
         ->from($from, $name)
-        ->subject('Feedback JasaKita')->view('pages.emails.message-feedback');
+        ->subject("Feedback JasaKita - ".$subject)->view('pages.emails.message-feedback');
     }
 }

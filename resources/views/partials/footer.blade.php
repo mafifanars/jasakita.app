@@ -1,3 +1,8 @@
+@if(Session::has('status'))
+    <script>
+        alert("{{Session::get('status')}}");
+    </script>
+@endif
 <footer id="footer" class="#section-bg">
     <div class="footer-top">
         <div class="container">
@@ -51,25 +56,25 @@
                         <h4>Beri kami masukan</h4>
                         <p>Masukan dari anda dapat membantu kami dalam mengembangkan aplikasi menuju lebih baik.</p>
 
-                        <form action="/feedback" method="post" role="form" class="contactForm">
+                        <form action="/feedback" method="post" id="feedback-form"  role="form" class="contactForm">
                             @csrf
                             <div class="form-group">
-                                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" data-rule="minlen:4" data-msg="Silakan masukkan setidaknya 4 karakter" />
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" data-rule="email" data-msg="Silakan masukkan email yang benar" />
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subjek" data-rule="minlen:4" data-msg="Silakan masukkan setidaknya 8 karakter subjek" />
                                 <div class="validation"></div>
                             </div>
 
                             <div class="form-group">
-                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Pesan / Masukan"></textarea>
+                                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Silakan tuliskan sesuatu untuk kami" placeholder="Pesan / Masukan"></textarea>
                                 <div class="validation"></div>
                             </div>
 

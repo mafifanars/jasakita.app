@@ -28,7 +28,7 @@
                     Email: {{ $details['email'] }}
                 </p>
                 <div class="text-justify">
-                    <p>Pesan/Masukan: {{ $details['message'] }}</p>
+                    <p>Pesan/Masukan: <br> {{ $details['message'] }}</p>
                 </div>
               </div>
             </div>

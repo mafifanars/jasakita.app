@@ -66,7 +66,7 @@
     <script src="{{ asset('lib/lightbox/js/lightbox.min.js') }}"></script>
 
     <!-- Contact Form JavaScript File -->
-    <script src="{{ asset('contactform/contactform.js') }}"></script>
+    <script src="{{ asset('js/contactform.js') }}"></script>
 
     <!-- Template Main Javascript File -->
     <script src="{{ asset('js/main.js') }}"></script>
